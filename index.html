@@ -1,9 +1,18 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>John Smith</h1>
-  <p>Welcome to my first website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>Burro Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Burro Game</h1>
+    <p id="game-text">You are a farmer and you own a donkey. You need to take your donkey to market to sell it. Do you want to walk or ride the donkey to the market?</p>
+    <div class="button-container">
+      <button id="walk-button" onclick="chooseWalk()">Walk</button>
+      <button id="ride-button" onclick="chooseRide()">Ride</button>
+    </div>
+    <div id="game-result"></div>
+    <div id="image-container"></div>
+  </body>
+  <script src="script.js"></script>
 </html>
