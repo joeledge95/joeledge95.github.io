@@ -1,4 +1,8 @@
 /* Main Styles */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   margin: 0;
@@ -16,14 +20,20 @@ header {
   height: 5rem;
   width: 100%;
   z-index: 2;
-  background-color: blue;
+  background-color: lightblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#logo {
+  padding-left: 1rem;
 }
 
 nav ul {
   list-style-type: none;
+  padding-right: 1rem;
 }
 
 nav ul li {
@@ -34,9 +44,10 @@ nav ul li {
 /* About Me */
 #about-me {
   position: relative;
-  top: 10rem;
+  top: 5rem;
   width: 60%;
   margin: auto;
+  padding-top: 0.01rem;
 }
 
 #about-me img {
