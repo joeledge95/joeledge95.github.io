@@ -13,6 +13,29 @@ body {
   background-color: rgb(0, 145, 234);
 }
 
+main {
+  width: 60%;
+  margin: auto;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  color: inherit;        /* Makes the link text color the same as its parent */
+  text-decoration: none; /* Removes underline or other text decorations */
+  background-color: transparent; /* Removes any background change on click */
+  outline: none;         /* Removes the focus outline */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    width: 80%;
+  }
+}
 
 /* Header */
 header {
@@ -20,7 +43,7 @@ header {
   height: 5rem;
   width: 100%;
   z-index: 2;
-  background-color: lightblue;
+  background-color: skyblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,18 +64,45 @@ nav ul li {
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  header {
+    height: 3rem;
+  }
+}
+
 /* About Me */
 #about-me {
   position: relative;
-  top: 5rem;
-  width: 60%;
   margin: auto;
-  padding-top: 0.01rem;
+  padding-top: 5rem;
+}
+
+#about-me p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
 }
 
 #about-me img {
-  float: right;
   width: 20%;
   height: auto;
+  float: right;
+  margin-left: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
+@media only screen and (max-width: 480px) {
+  #about-me img {
+    width: 40%;
+    margin-left: 0.1rem;
+    margin-bottom: 0.33rem;
+  }
+
+  #about-me {
+    font-size: 1.3rem;
+  }
+}
+
+/* Portfolio */
+#portfolio {
+  margin: auto;
+}
