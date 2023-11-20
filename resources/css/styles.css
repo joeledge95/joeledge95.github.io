@@ -11,6 +11,7 @@ html {
 
 body {
   background-color: rgb(0, 145, 234);
+  font-family: 'Changa', sans-serif;
 }
 
 main {
@@ -37,17 +38,24 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   }
 }
 
+@media only screen and (max-width: 393px) {
+  main {
+    width: 90%;
+  }
+}
+
 /* Header */
 header {
   position: fixed;
   height: 5rem;
   width: 100%;
   z-index: 2;
-  background-color: skyblue;
+  background-color: rgb(234, 111, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  font-family: 'Space Mono', monospace;
 }
 
 #logo {
@@ -75,25 +83,26 @@ nav ul li {
   position: relative;
   margin: auto;
   padding-top: 5rem;
+  line-height: 1.6;
 }
 
 #about-me p {
   margin: 0 0 1rem;
-  line-height: 1.6;
 }
 
 #about-me img {
   width: 20%;
   height: auto;
   float: right;
-  margin-left: 0.3rem;
+  margin-left: 0.5rem;
   margin-bottom: 0.1rem;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 480px) {
   #about-me img {
     width: 40%;
-    margin-left: 0.1rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.33rem;
   }
 
