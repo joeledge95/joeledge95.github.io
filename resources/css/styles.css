@@ -19,6 +19,10 @@ main {
   margin: auto;
 }
 
+h1, h2, strong {
+  font-weight: 600;
+}
+
 a, a:link, a:visited, a:hover, a:active, a:focus {
   color: inherit;        /* Makes the link text color the same as its parent */
   text-decoration: none; /* Removes underline or other text decorations */
