@@ -30,6 +30,10 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   outline: none;         /* Removes the focus outline */
 }
 
+.mobile {
+  display: none;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -74,11 +78,53 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-left: 1rem;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   header {
     height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+  }
+
+  #logo {
+    max-width: 20%;
+  }
+
+  nav img {
+    height: 4rem;
+    width: auto;
+  }
+
+  nav ul li {
+    margin-left: 0.5rem;
+  }
+
+  .no-left-margin {
+    margin-left: 0;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  header {
+    height: 3rem;
+  }
+
+  nav img {
+    height: 2.4rem;
   }
 }
 
@@ -103,6 +149,12 @@ nav ul li {
   margin-top: 0.5rem;
 }
 
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  #about-me {
+    padding-top: 3rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   #about-me img {
     width: 40%;
@@ -114,6 +166,13 @@ nav ul li {
     font-size: 1.3rem;
   }
 }
+
+@media only screen and (max-width: 365px) {
+  #about-me {
+    padding-top: 3rem;
+  }
+}
+
 
 /* Portfolio */
 #portfolio {
