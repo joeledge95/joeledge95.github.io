@@ -184,3 +184,17 @@ nav ul li {
 #portfolio {
   margin: auto;
 }
+
+.grid {
+  display: grid;
+  grid-template: auto;
+}
+
+.item {
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  width: 33%;
+  height: 15rem;
+  padding: 1rem;
+  background-color: darkblue;
+}
