@@ -97,7 +97,7 @@ nav ul li {
   }
 
   #logo {
-    max-width: 20%;
+    max-width: 30%;
   }
 
   nav img {
@@ -123,6 +123,12 @@ nav ul li {
     height: 3rem;
   }
 
+  nav img {
+    height: 2.4rem;
+  }
+}
+
+@media only screen and (orientation: landscape) {
   nav img {
     height: 2.4rem;
   }
