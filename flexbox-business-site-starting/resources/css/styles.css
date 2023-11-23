@@ -1,0 +1,67 @@
+/* Main Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(10, 22, 40);
+  color: rgb(230, 230, 230);
+  font-family: 'Lato', sans-serif;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  color: inherit;        /* Makes the link text color the same as its parent */
+  text-decoration: none; /* Removes underline or other text decorations */
+  background-color: transparent; /* Removes any background change on click */
+  outline: none;         /* Removes the focus outline */
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(25, 45, 65);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  padding-left: 0.7rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-right: 0.7rem;
+  padding-left: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav li {
+  display: inline-block;
+}
+
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 80vh;
+  padding-top: 5rem;
+  background-image: url('../images/hero-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
