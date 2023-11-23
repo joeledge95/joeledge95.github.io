@@ -17,6 +17,17 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  margin-top: 2rem;
+}
+
 a, a:link, a:visited, a:hover, a:active, a:focus {
   color: inherit;        /* Makes the link text color the same as its parent */
   text-decoration: none; /* Removes underline or other text decorations */
@@ -48,6 +59,8 @@ nav ul {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   display: flex;
+  width: 13rem;
+  justify-content: space-between;
 }
 
 nav li {
@@ -58,11 +71,16 @@ nav li {
 /* Hero Section */
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   padding-top: 5rem;
   background-image: url('../images/hero-image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+/* Mission Section */
+#mission {
+  width: 60%;
 }
