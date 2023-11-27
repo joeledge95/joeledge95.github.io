@@ -22,12 +22,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgb(0, 0, 0);
-  box-shadow: 12px 12px 2px 1px rgba(136, 136, 136, 0.2);
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-color: rgb(10, 22, 40);
 }
 
 a, a:link, a:visited, a:hover, a:active, a:focus {
@@ -112,13 +109,20 @@ nav li {
   margin-bottom: 1rem;
 }
 
-/* Products Section */
-#products {
-  margin-top: 3rem;
+/* Products + Meet the team (core) Sections */
+.core-section {
   width: 95%;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(136, 136, 136, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(10, 22, 40);
+  border: 1px solid rgb(20, 32, 50);
 }
 
-#products h2 {
+.core-section h2 {
   width: 50%;
   margin-bottom: 1rem;
   margin-left: 5rem;
@@ -166,4 +170,37 @@ nav li {
 /* Team Section */
 #team {
   margin-top: 2rem;
+}
+
+#team .flex {
+  flex-wrap: nowrap;
+}
+
+.employee {
+  width: 18rem;
+  height: auto;
+  margin-bottom: 1rem;
+  background-color: rgb(15, 45, 55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee .img-container {
+  margin: 0.7rem;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.employee p {
+  margin-bottom: 0.5rem;
 }
