@@ -1,18 +1,18 @@
 /* Main Styles */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
   font-size: 16px;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   width: 100%;
   overflow-x: hidden;
-  background-color: rgb(10, 22, 40);
+  background-color: rgb(4, 0, 18);
   color: rgb(230, 230, 230);
   font-family: 'Lato', sans-serif;
 }
@@ -22,11 +22,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 12px 12px 2px 1px rgba(136, 136, 136, 0.2);
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  background-color: rgb(10, 22, 40);
 }
 
 a, a:link, a:visited, a:hover, a:active, a:focus {
@@ -36,8 +37,10 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   outline: none;         /* Removes the focus outline */
 }
 
-h1, h2, h3 {
-  margin: 0;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Header */
@@ -60,8 +63,6 @@ header .logo {
 nav ul {
   list-style-type: none;
   padding-right: 0.7rem;
-  padding-left: 0;
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   gap: 1rem;
@@ -92,7 +93,6 @@ nav li {
 #hero div {
   width: 20rem;
   padding-top: 9rem;
-  margin: 0;
 }
 
 /* Mission Section */
@@ -100,27 +100,67 @@ nav li {
   width: 60%;
   margin-top: 0.7rem;
   text-align: justify;
+  line-height: 1.6;
+  background-color: rgb(30, 40, 55);
+  padding: 1.3rem;
+  border: 1px solid rgb(45, 60, 75);
+  font-size: 1.05rem;
+  border-radius: 10px;
+}
+
+#mission h2 {
+  margin-bottom: 1rem;
 }
 
 /* Products Section */
 #products {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid black;
+  margin-top: 3rem;
   width: 95%;
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
 
-.item {
-  width: 10rem;
-  margin: 1rem;
+#products h2 {
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+}
+
+.item { /*golden ratio = 1.618*/
+  width: 18rem;
+  height: auto;
+  margin-bottom: 1rem;
+  background-color: rgb(15, 45, 55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover {
+  border-color: rgb(65, 105, 225); /* Brighter blue */
+  box-shadow: 4px 4px 12px rgba(65, 105, 225, 0.5); /* Soft glow */
+}
+
+.item .img-container {
+  margin: 0.7rem;
 }
 
 .item img {
-  width: 70%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.item h3 {
+  width: 90%;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  vertical-align: middle;
 }
 
 /* Team Section */
