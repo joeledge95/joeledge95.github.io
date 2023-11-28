@@ -69,6 +69,26 @@ nav li {
   display: inline-block;
 }
 
+@media only screen and (max-width: 450px) {
+  header {
+    height: 3rem;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    font-size: 0.75rem;
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  header .logo {
+    font-size: 1.2rem;
+  }
+}
 
 /* Hero Section */
 #hero {
@@ -90,6 +110,12 @@ nav li {
 #hero div {
   width: 20rem;
   padding-top: 9rem;
+}
+
+@media only screen and (max-width: 450px) {
+  #hero {
+    padding-top: 3rem;
+  }
 }
 
 /* Mission Section */
@@ -141,7 +167,7 @@ nav li {
 .core-section h2 {
   width: 50%;
   margin-bottom: 1rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
   font-size: 2rem;
 }
 
@@ -190,6 +216,7 @@ nav li {
 
 #team .flex {
   flex-wrap: nowrap;
+  margin: 1rem;
 }
 
 .employee {
@@ -204,7 +231,7 @@ nav li {
 }
 
 .employee .img-container {
-  margin: 0.7rem;
+  width: 100%;
 }
 
 .employee img {
@@ -215,8 +242,19 @@ nav li {
   border-radius: 5px;
 }
 
+.employee h3 {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: rgb(220, 220, 220);
+}
+
 .employee p {
   margin-bottom: 0.5rem;
+  width: 100%;
+  color: rgb(200, 200, 200);
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 615px) {
