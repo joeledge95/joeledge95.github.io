@@ -40,6 +40,12 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 715px) {
+  main {
+    width: 100%;
+  }
+}
+
 /* Header */
 header {
   position: fixed;
@@ -209,7 +215,7 @@ nav li {
   vertical-align: middle;
 }
 
-/* Team Section */
+/* Team only Section */
 #team {
   margin-top: 2rem;
 }
@@ -255,6 +261,16 @@ nav li {
   width: 100%;
   color: rgb(200, 200, 200);
   font-size: 0.8rem;
+}
+
+/* Media queries for core sections */
+@media only screen and (max-width: 715px) {
+  .core-section {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 615px) {
