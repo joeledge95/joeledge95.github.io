@@ -142,8 +142,19 @@ nav ul li {
   line-height: 1.6;
 }
 
+#about-me .content {
+  background-color: rgb(0, 100, 200);
+  width: 100%;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
 #about-me p {
   margin: 0 0 1rem;
+}
+
+#about-me h1 {
+  font-family: 'Changa', sans-serif;
 }
 
 #about-me img {
@@ -183,6 +194,7 @@ nav ul li {
 /* Portfolio */
 #portfolio {
   margin: auto;
+  padding-bottom: 2rem;
 }
 
 .grid {
@@ -193,8 +205,19 @@ nav ul li {
 .item {
   border: 0.2rem solid black;
   border-radius: 1rem;
-  width: 33%;
-  height: 15rem;
+  width: 20rem;
+  height: auto;
   padding: 1rem;
   background-color: darkblue;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.item h3 {
+  color: wheat;
 }
