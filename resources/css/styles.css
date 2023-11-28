@@ -202,9 +202,9 @@ nav ul li {
   padding-bottom: 2rem;
 }
 
-.grid {
-  display: grid;
-  grid-template: auto;
+.flex {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .item {
