@@ -204,7 +204,8 @@ nav ul li {
 
 .flex {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .item {
@@ -216,6 +217,28 @@ nav ul li {
   background-color: darkblue;
 }
 
+/* */
+
+.item {
+  border: 0.2rem solid rgb(25, 45, 65); /* Border color matching header */
+  border-radius: 1rem;
+  width: 18rem; /* Adjust based on layout */
+  height: auto;
+  margin: 1rem; /* Spacing between items */
+  padding: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a.item, a.item:link, a.item:visited, a.item:hover, a.item:active, a.item:focus {
+  background-color: rgb(10, 22, 40); /* put background colour in to all a items */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 6px 6px 10px rgb(255, 128, 0); /* Enhanced shadow on hover */
+}
+
 .item img {
   width: 100%;
   height: auto;
@@ -224,8 +247,14 @@ nav ul li {
 }
 
 .item h3 {
-  color: wheat;
+  font-family: 'Roboto Condensed', sans-serif; /* Consistent font with header */
+  font-size: 1.2rem; /* Readable font size */
+  color: wheat; /* A color that stands out */
+  margin-top: 0.5rem; /* Spacing from image */
+  text-align: center; /* Centered text */
 }
+
+/**/
 
 /* Jagged border */
 
