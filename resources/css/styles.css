@@ -292,10 +292,10 @@ a.item, a.item:link, a.item:visited, a.item:hover, a.item:active, a.item:focus {
 
 @media only screen and (max-width: 480px) {
   .jagged-border::before {
-    transform: rotate(1deg);
+    transform: rotate(0.75deg);
   }
   
   .jagged-border::after {
-    transform: rotate(-1deg);
+    transform: rotate(-0.75deg);
   }
 }
