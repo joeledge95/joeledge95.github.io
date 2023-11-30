@@ -1,0 +1,47 @@
+/* Core Styles */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  color: inherit;        /* Makes the link text color the same as its parent */
+  text-decoration: none; /* Removes underline or other text decorations */
+  background-color: transparent; /* Removes any background change on click */
+  outline: none;         /* Removes the focus outline */
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  background-color: #003366;
+  width: 100%;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-content: center;
+  align-items: center;
+  justify-items: end;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0.001px;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 2%;
+}
+
+/* Main Styles */
+main {
+  display: grid;
+  padding-top: 4rem;
+}
