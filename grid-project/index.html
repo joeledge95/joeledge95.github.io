@@ -8,18 +8,20 @@
   <!-- Styles -->
   <link rel="stylesheet" href="../resources/css/normalise.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alice:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
   
   <!-- Header -->
   <header>
-    <p id="icon">Time Travelers' Book Club</p>
+    <p id="icon"><a href="#">Time Travelers' Book Club</a></p>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#books">Books</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <button class="nav-button" onclick="location.href='#about'">About</button>
+      <button class="nav-button" onclick="location.href='#books'">Books</button>
+      <button class="nav-button" id="nav-end" onclick="location.href='#contact'">Contact</button>
     </nav>
   </header>
 
@@ -28,8 +30,10 @@
 
     <!-- Splash Section -->
     <section id="splash">
-      <h1>Time Travelers' Book Club</h1>
-      <h2>Journey Through Pages, Travel Through Ages</h2>
+      <div id="splash-banner">
+        <h1>Time Travelers' Book Club</h1>
+        <h2>Journey Through Pages, Travel Through Ages</h2>
+      </div>
     </section>
 
     <!-- About Section -->
