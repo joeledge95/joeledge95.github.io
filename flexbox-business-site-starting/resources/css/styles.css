@@ -277,3 +277,35 @@ nav li {
     flex-wrap: wrap;
   }
 }
+
+/* Footer Styles */
+/* Footer General Style */
+footer {
+  background-color: rgb(30, 40, 55); /* Dark background for contrast */
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid rgb(45, 60, 75); /* Adds a subtle border */
+}
+
+/* Footer Anchor Tag Style */
+footer a, footer a:link, footer a:visited {
+  color: rgb(65, 105, 225); /* Bright blue color for links */
+  text-decoration: none; /* No underline by default */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+footer a:hover, footer a:focus {
+  color: rgb(255, 215, 0); /* Change color on hover */
+  text-decoration: underline; /* Underline on hover for clear indication */
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: 0.5rem;
+  }
+
+  footer a, footer a:link, footer a:visited {
+    font-size: 0.9rem; /* Smaller font size on smaller screens */
+  }
+}
