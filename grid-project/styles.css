@@ -4,6 +4,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #F5F0E6;
+}
+
 nav, footer {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -11,6 +15,15 @@ nav, footer {
 h1, h2, h3, p {
   margin: 0;
   padding: 0.1px;
+}
+
+h1, h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mobile {
+  display: none;
 }
 
 /* Subtitles/Subheadings */
@@ -43,9 +56,10 @@ header {
   align-content: center;
   align-items: center;
   text-align: center;
+  z-index: 10;
 }
 
-#icon {
+.icon {
   text-align: left;
   padding-left: 0.8rem;
   padding-top: 0.5rem;
@@ -54,18 +68,24 @@ header {
   font-weight: bold;
 }
 
+nav {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+
 .nav-button {
   background-color: #DAA520; /* Gold background */
   color: #003366; /* Deep blue text */
   border: none;
-  padding: 0.625rem 1.25rem;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 1rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  height: 90%;
+  height: 2rem;
   width: 6rem;
 }
 
@@ -78,11 +98,31 @@ header {
   margin-right: 0.8rem;
 }
 
-nav {
-  display: inline-flex;
-  width: 100%;
-  justify-content: space-around;
-  height: 100%;
+@media only screen and (max-width: 700px) {
+  .icon.desktop {
+    display: none;
+  }
+
+  .icon.mobile {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-button {
+    width: 4rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .icon.mobile {
+    font-size: 1.3rem;
+  }
+
+  .nav-button {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
 }
 
 /* Main Styles */
@@ -90,7 +130,6 @@ main {
   display: grid;
   padding-top: 3.5rem;
   width: 100%;
-  background-color: #F5F0E6;
 }
 
 /* Splash Styles */
@@ -140,20 +179,106 @@ main {
   text-align: justify; /* Justifies the text for a cleaner look */
 }
 
+@media only screen and (max-width: 630px) {
+  #about {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  #about p {
+    text-align: left; /* Justifies the text for a cleaner look */
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #about {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    width: 86%;
+  }
+}
+
 /* Books Styles */
 #books {
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4rem;
+  justify-items: center;
+}
+
+#books {
+  width: 80%; /* Adjust the width as needed */
+  margin: 2rem auto; /* Centering the section with top and bottom margin */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid layout */
+  grid-gap: 1.5rem; /* Space between grid items */
+  padding: 2rem; /* Padding inside the section */
+  background-color: rgba(255, 248, 220, 0.8); /* Light, semi-transparent background color */
+  border-radius: 10px; /* Rounded corners for the grid container */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#books h3 {
+  grid-column: 1 / -1; /* Ensures the heading spans all columns */
+  font-family: 'Merriweather', serif; /* Stylish serif font for the heading */
+  font-size: 2rem; /* Larger font size for the heading */
+  color: #003366; /* Deep blue color for the heading text */
+  margin-bottom: 1.5rem; /* Space below the heading */
+  text-align: center; /* Center-align the heading */
 }
 
 .book {
-  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; /* White background for each book item */
+  padding: 1rem; /* Padding around the content */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.book:hover {
+  transform: translateY(-5px); /* Slightly raise the book on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover for a "lifting" effect */
 }
 
 .book img {
-  width: 100%;
+  max-width: 100%; /* Ensure image is fully contained within the item */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* A line to separate image from text */
+  margin-bottom: 0.5rem; /* Space between image and text */
 }
 
-#books .book p {
-  font-family: 'Alice', serif;
+.book p {
+  font-size: 1rem; /* Font size for book titles */
+  color: #333; /* Dark color for text */
+  text-align: center; /* Center-align the text */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366; /* Deep blue background, matching the header */
+  color: #F5F5DC; /* Creamy off-white text color for contrast */
+  text-align: center; /* Center-aligns the text */
+  padding: 1rem; /* Padding for spacing */
+  font-family: 'Source Sans Pro', sans-serif; /* Consistent font with the navigation */
+}
+
+footer p {
+  margin: 0.5rem 0; /* Vertical margin for each paragraph */
+  font-size: 1rem; /* Appropriate font size for readability */
+}
+
+/* Specific styles for links in the footer */
+footer a, footer a:link, footer a:visited {
+  color: #DAA520; /* Gold color for footer links */
+  text-decoration: underline; /* Adds underline to indicate it's a clickable link */
+}
+
+footer a:hover, footer a:active, footer a:focus {
+  color: #F5F5DC; /* Light color for hover, active, and focus states */
+  text-decoration: none; /* Removes underline on hover for a clean look */
 }
