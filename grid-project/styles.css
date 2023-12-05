@@ -87,6 +87,7 @@ nav {
   transition: background-color 0.3s, color 0.3s;
   height: 2rem;
   width: 6rem;
+  padding: 0;
 }
 
 .nav-button:hover {
