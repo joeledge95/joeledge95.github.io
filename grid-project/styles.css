@@ -1,6 +1,9 @@
 /* Core Styles */
-html {
+* {
   box-sizing: border-box;
+}
+
+html {
   font-size: 16px;
   width: 100%;
 }
@@ -209,7 +212,7 @@ main {
   margin: 2rem auto; /* Centering the section with top and bottom margin */
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); /* Creates a responsive grid layout */
   grid-gap: 1.5rem; /* Space between grid items */
   padding: 2rem; /* Padding inside the section */
   background-color: rgba(255, 248, 220, 0.8); /* Light, semi-transparent background color */
