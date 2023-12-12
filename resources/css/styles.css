@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
@@ -38,18 +38,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   content: "";
   display: table;
   clear: both;
-}
-
-@media only screen and (max-width: 800px) {
-  main {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  main {
-    width: 90%;
-  }
 }
 
 /* Header */
@@ -141,6 +129,19 @@ nav ul li {
   padding-top: 5rem;
   padding-bottom: 1.8rem;
   line-height: 1.6;
+  width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+  #about-me {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about-me {
+    width: 90%;
+  }
 }
 
 #about-me .content {
@@ -200,6 +201,7 @@ nav ul li {
 #portfolio {
   margin: auto;
   padding-bottom: 2rem;
+  width: 80%;
 }
 
 .flex {
@@ -208,14 +210,6 @@ nav ul li {
   justify-content: space-around;
 }
 
-.item {
-  border: 0.2rem solid black;
-  border-radius: 1rem;
-  width: 20rem;
-  height: auto;
-  padding: 1rem;
-  background-color: darkblue;
-}
 
 /* */
 
