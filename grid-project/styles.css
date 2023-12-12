@@ -203,18 +203,12 @@ main {
 }
 
 /* Books Styles */
-#books {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 4rem;
-  justify-items: center;
-}
 
 #books {
   width: 80%; /* Adjust the width as needed */
   margin: 2rem auto; /* Centering the section with top and bottom margin */
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid layout */
   grid-gap: 1.5rem; /* Space between grid items */
   padding: 2rem; /* Padding inside the section */
