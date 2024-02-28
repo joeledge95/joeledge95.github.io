@@ -237,7 +237,7 @@ a.item, a.item:link, a.item:visited, a.item:hover, a.item:active, a.item:focus {
 .item h3 {
   font-family: 'Roboto Condensed', sans-serif; /* Consistent font with header */
   font-size: 1.2rem; /* Readable font size */
-  color: wheat; /* A color that stands out */
+  color: black; /* A color that stands out */
   margin-top: 0.5rem; /* Spacing from image */
   text-align: center; /* Centered text */
 }
