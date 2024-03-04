@@ -151,6 +151,8 @@ nav ul li {
 
 #about-me h1 {
   font-family: 'Changa', sans-serif;
+  font-size: 4rem;
+  margin: 0;
 }
 
 #about-me img {
@@ -187,6 +189,10 @@ nav ul li {
 @media only screen and (max-width: 365px) {
   #about-me {
     padding-top: 3rem;
+  }
+
+  #about-me h1 {
+    font-size: 3rem;
   }
 }
 
@@ -286,4 +292,11 @@ a.item, a.item:link, a.item:visited, a.item:hover, a.item:active, a.item:focus {
   .jagged-border::after {
     transform: rotate(-0.75deg);
   }
+}
+
+/* Footer */
+footer {
+  background-color: rgb(168 155 98);
+  height: 8rem;
+  border-top: 1.5px solid black;
 }
