@@ -230,7 +230,7 @@ a.item, a.item:link, a.item:visited, a.item:hover, a.item:active, a.item:focus {
 
 .item:hover {
   transform: scale(1.05); /* Slightly scale up on hover */
-  box-shadow: 6px 6px 10px rgb(255, 128, 0); /* Enhanced shadow on hover */
+  box-shadow: 6px 6px 10px rgb(153, 0, 255); /* Enhanced shadow on hover */
 }
 
 .item img {
@@ -296,7 +296,15 @@ a.item, a.item:link, a.item:visited, a.item:hover, a.item:active, a.item:focus {
 
 /* Footer */
 footer {
-  background-color: rgb(168 155 98);
-  height: 8rem;
+  background-color: rgb(255, 250, 159);
+  min-height: 8rem;
   border-top: 1.5px solid black;
+}
+
+#footer-content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 0.8rem;
 }
